@@ -1,5 +1,5 @@
 "use client";
-import { Play, Users, FileText, Calendar, Heart } from "lucide-react";
+import { Play, Users, FileText, Calendar} from "lucide-react";
 import { useState } from "react";
 
 const VideoSection = () => {
@@ -7,14 +7,6 @@ const VideoSection = () => {
   const [videoUrl, setVideoUrl] = useState(
     "https://drive.google.com/file/d/1hb0U380Eh0qH6kVt6l6ar4XJWD2ygpDp/view?usp=sharing&fbclid=IwY2xjawMmsLJleHRuA2FlbQIxMQABHlHFo5GrmRa7C0O2Xtt5gzJ9_jgxQzeqFt0_LzPXxivQZ04nvm03ga3ZjB_k_aem_BJ3VfILDrBwJemQ3Dzxj1A"
   ); // You'll provide the Google Drive link here
-
-  const handleVideoOpen = () => {
-    setVideoUrl(
-      "https://drive.google.com/file/d/1hb0U380Eh0qH6kVt6l6ar4XJWD2ygpDp/view?usp=sharing&fbclid=IwY2xjawMmsLJleHRuA2FlbQIxMQABHlHFo5GrmRa7C0O2Xtt5gzJ9_jgxQzeqFt0_LzPXxivQZ04nvm03ga3ZjB_k_aem_BJ3VfILDrBwJemQ3Dzxj1A/preview"
-    );
-    setShowVideo(true);
-  };
-
   const handleVideoClose = () => {
     setShowVideo(false);
     setVideoUrl("");
