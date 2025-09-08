@@ -6,7 +6,7 @@ const VideoSection = () => {
   const [showVideo, setShowVideo] = useState(false);
   const [videoUrl, setVideoUrl] = useState(
     "https://drive.google.com/file/d/1hb0U380Eh0qH6kVt6l6ar4XJWD2ygpDp/view?usp=sharing&fbclid=IwY2xjawMmsLJleHRuA2FlbQIxMQABHlHFo5GrmRa7C0O2Xtt5gzJ9_jgxQzeqFt0_LzPXxivQZ04nvm03ga3ZjB_k_aem_BJ3VfILDrBwJemQ3Dzxj1A"
-  ); // You'll provide the Google Drive link here
+  );
   const handleVideoClose = () => {
     setShowVideo(false);
     setVideoUrl("");
@@ -50,7 +50,7 @@ export default function ClubWelcomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden ">
+    <div className="h-screen bg-gray-900 text-white relative overflow-y-auto">
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl animate-pulse"
@@ -66,9 +66,9 @@ export default function ClubWelcomePage() {
         ></div>
       </div>
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-      <div className="relative z-10 grid lg:grid-cols-2 min-h-screen ">
+      <div className="relative z-10 min-h-full lg:grid lg:grid-cols-2 lg:min-h-screen">
         {/* Left Side - Welcome & Logo */}
-        <div className="flex flex-col items-center justify-center p-8 lg:p-16 xl:p-20">
+        <div className="flex flex-col items-center justify-center p-8 lg:p-16 xl:p-20 py-16">
           <div className="max-w-lg lg:max-w-xl xl:max-w-2xl text-center space-y-8 lg:space-y-10">
             <div className="text-center flex flex-col items-center">
               <div className="relative inline-block mb-8">
@@ -82,7 +82,7 @@ export default function ClubWelcomePage() {
 
                 {/* Bigger Box */}
                 <div
-                  className="relative w-80 h-80 lg:w-72 lg:h-72 rounded-[2rem] flex items-center justify-center mx-auto lg:mx-0 border-4 backdrop-blur-md shadow-xl"
+                  className="relative w-64 h-64 md:w-80 md:h-80 lg:w-72 lg:h-72 rounded-[2rem] flex items-center justify-center mx-auto lg:mx-0 border-4 backdrop-blur-md shadow-xl"
                   style={{
                     background: `${theme.blue}20`,
                     borderColor: `${theme.blue}50`,
@@ -137,7 +137,7 @@ export default function ClubWelcomePage() {
         </div>
 
         {/* Right Side - Video & Actions */}
-        <div className="flex flex-col items-center justify-center p-8 lg:p-16 xl:p-20">
+        <div className="flex flex-col items-center justify-center p-8 lg:p-16 xl:p-20 pb-16 lg:pb-0">
           <div className="max-w-lg lg:max-w-xl xl:max-w-2xl text-center space-y-8 lg:space-y-10">
             {/* Video Section */}
             <VideoSection />
