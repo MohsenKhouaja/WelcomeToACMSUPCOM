@@ -129,7 +129,7 @@ export default function ClubWelcomePage() {
               </h1>
 
               <p className="text-lg lg:text-xl xl:text-2xl text-gray-300 text-pretty leading-relaxed">
-                Chnoua cp? w 3lech lezmni na3mlouh?
+                what is CP and why work on it?
                 <br /> hetha lkol 7keneh fi live fi sef
                 <br /> link below ⬇️⬇️
                 <br /> Fill the form to become a member
