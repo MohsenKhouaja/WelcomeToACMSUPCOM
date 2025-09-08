@@ -50,7 +50,7 @@ export default function ClubWelcomePage() {
   };
 
   return (
-    <div className="h-screen bg-gray-900 text-white relative overflow-hidden ">
+    <div className="min-h-screen bg-gray-900 text-white relative overflow-hidden ">
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl animate-pulse"
@@ -65,9 +65,7 @@ export default function ClubWelcomePage() {
           style={{ background: `${theme.red}10` }}
         ></div>
       </div>
-
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-
       <div className="relative z-10 grid lg:grid-cols-2 min-h-screen ">
         {/* Left Side - Welcome & Logo */}
         <div className="flex flex-col items-center justify-center p-8 lg:p-16 xl:p-20">
