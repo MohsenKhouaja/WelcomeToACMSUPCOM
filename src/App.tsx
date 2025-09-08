@@ -1,5 +1,5 @@
 "use client";
-import { Play, Users, FileText, Calendar} from "lucide-react";
+import { Play, Users, FileText, Calendar } from "lucide-react";
 import { useState } from "react";
 
 const VideoSection = () => {
@@ -177,10 +177,10 @@ export default function ClubWelcomePage() {
               <button
                 className="w-full h-16 lg:h-20 xl:h-24 text-lg lg:text-xl xl:text-2xl font-semibold text-white rounded-lg lg:rounded-xl bg-gray-800/50 backdrop-blur-xl border border-gray-600/50 hover:bg-gray-700/50 transition-all duration-300 hover:shadow-lg hover:scale-105 group"
                 onClick={() => {
-                  console.log(
-                    "[v0] Form button clicked - Google Form link needed"
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSdNO7f2RbMpDWY1-xz-JHWmHHSOeIh3NfEDQvPdDfFbZ3tJPg/viewform?fbclid=IwY2xjawMr_fJleHRuA2FlbQIxMQABHs2YfsLDtDOe9HfrMmbUQSsrusJpZ2onv46SdInHJTQ8rEdRAZq6AJ06o0LQ_aem_Ygj_3vf_au7zIGToyOFj_Q",
+                    "_blank"
                   );
-                  // window.open("YOUR_GOOGLE_FORM_LINK", "_blank");
                 }}
               >
                 <div className="flex items-center justify-center">
